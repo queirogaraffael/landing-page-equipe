@@ -1,0 +1,23 @@
+.btn-topo {
+    position: fixed;       
+    bottom: 30px;           
+    right: 30px;          
+    background-color: #111; 
+    color: #fff;           
+    padding: 12px 20px;    
+    border-radius: 50px;   
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    transition: background-color 0.3s, transform 0.2s;
+    z-index: 999;       
+}
+
+.btn-topo:hover {
+    background-color: #333;
+    transform: translateY(-3px);
+}
+
+#btnTopo {
+    display: none;
+}
