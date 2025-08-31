@@ -12,7 +12,11 @@
 
 .skills-container {
     display: flex;
+<<<<<<< HEAD
+    flex-direction: column; 
+=======
     flex-direction: column; /* Padrão mobile-first: empilha os cards */
+>>>>>>> cb49747d1505d5cccd2af16cc67a26bcb7ef74f6
     align-items: center;
     gap: 40px;
 }
