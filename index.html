@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Equipe – Landing Page</title>
+    <title>Landing Page - Equipe</title>
 
     <meta
       name="description"
@@ -11,20 +11,305 @@
     />
 
     <link rel="icon" href="assets/imagens/favicon.png" type="image/png" />
+
+    <link rel="stylesheet" href="css/back-to-top.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/background.css" />
+    <link rel="stylesheet" href="css/skills.css" />
+    <link rel="stylesheet" href="css/projetos.css" />
   </head>
   <body>
-    <header>
-        <nav></nav>
+    <div id="particles-js"></div>
+
+    <a href="#navbar" class="btn-topo" id="btnTopo">Voltar ao topo</a>
+
+    <header class="navbar">
+      <div class="logo">
+        <h1>Equipe – Landing Page</h1>
+      </div>
+
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav>
+        <div class="navbar-overlay"></div>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contatos">Contatos</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
       <section id="hero"></section>
       <section id="about"></section>
-      <section id="skills"></section>
-      <section id="projetos"></section>
+
+      <section id="skills">
+
+        <h2>Skills & Stacks</h2>
+
+        <div class="skills-container">
+
+          <div class="member-skills">
+            <h3>Raffael Queiroga</h3>
+            <div class="skill-list">
+              <div class="skill-item">
+                <img
+                  src="https://skillicons.dev/icons?i=java"
+                  alt="Java Icon"
+                />
+                <span>Java</span>
+              </div>
+              <div class="skill-item">
+                <img
+                  src="https://skillicons.dev/icons?i=spring"
+                  alt="Spring Boot Icon"
+                />
+                <span>Spring Boot</span>
+              </div>
+              <div class="skill-item">
+                <img
+                  src="https://skillicons.dev/icons?i=postman"
+                  alt="Postman Icon"
+                />
+                <span>Postman</span>
+              </div>
+              <div class="skill-item">
+                <img
+                  src="https://skillicons.dev/icons?i=docker"
+                  alt="Docker Icon"
+                />
+                <span>Docker</span>
+              </div>
+              <div class="skill-item">
+                <img
+                  src="https://skillicons.dev/icons?i=terraform"
+                  alt="Terraform Icon"
+                />
+                <span>Terraform</span>
+              </div>
+              <div class="skill-item">
+                <img src="https://skillicons.dev/icons?i=aws" alt="AWS Icon" />
+                <span>AWS</span>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="member-skills">
+            <h3>João Lucas</h3>
+            <div class="skill-list">
+
+              <div class="skill-item">
+                <img
+                  src="https://skillicons.dev/icons?i=python"
+                  alt="Python Icon"
+                />
+                <span>Python</span>
+              </div>
+
+              <div class="skill-item">
+                <img
+                  src="https://skillicons.dev/icons?i=django"
+                  alt="Django Icon"
+                />
+                <span>Django</span>
+              </div>
+
+              <div class="skill-item">
+                <img
+                  src="https://skillicons.dev/icons?i=postgresql"
+                  alt="PostgreSQL Icon"
+                />
+                <span>PostgreSQL</span>
+              </div>
+
+              <div class="skill-item">
+                <img src="https://skillicons.dev/icons?i=aws" alt="AWS Icon" />
+                <span>AWS</span>
+              </div>
+
+            </div>
+          </div>
+
+
+          <div class="member-skills">
+            <h3>Lucas Porto</h3>
+            <div class="skill-list">
+              <div class="skill-item">
+                <img
+                  src="https://skillicons.dev/icons?i=html"
+                  alt="HTML Icon"
+                />
+                <span>HTML</span>
+              </div>
+              <div class="skill-item">
+                <img src="https://skillicons.dev/icons?i=css" alt="CSS Icon" />
+                <span>CSS</span>
+              </div>
+              <div class="skill-item">
+                <img
+                  src="https://skillicons.dev/icons?i=sass"
+                  alt="Sass Icon"
+                />
+                <span>Sass</span>
+              </div>
+              <div class="skill-item">
+                <img
+                  src="https://skillicons.dev/icons?i=figma"
+                  alt="Figma Icon"
+                />
+                <span>Figma</span>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+      </section>
+
+      <section id="projetos">
+        <h2>Nossos Projetos</h2>
+        <div class="carousel-container">
+
+          <div class="carousel-track">
+
+
+            <div class="project-card">
+              <img
+                src="https://via.placeholder.com/400x250/FF5733/FFFFFF?text=Projeto+A"
+                alt="Imagem do Projeto A"
+              />
+              <h3>E-commerce Moderno</h3>
+              <p>
+                Desenvolvimento de uma loja virtual responsiva com carrinho de
+                compras e integração de pagamentos.
+              </p>
+              <span class="project-owner">Proprietário: Raffael Queiroga</span>
+              <div class="project-links">
+                <a href="#" target="_blank" class="btn-project">Ver Projeto</a>
+                <a href="#" target="_blank" class="btn-code">Ver Código</a>
+              </div>
+            </div>
+
+
+            <div class="project-card">
+              <img
+                src="https://via.placeholder.com/400x250/33FF57/FFFFFF?text=Projeto+B"
+                alt="Imagem do Projeto B"
+              />
+              <h3>Plataforma de Blog</h3>
+              <p>
+                Sistema de gerenciamento de conteúdo para blog, com autenticação
+                de usuários e CRUD de posts.
+              </p>
+              <span class="project-owner">Proprietário: João Lucas</span>
+              <div class="project-links">
+                <a href="#" target="_blank" class="btn-project">Ver Projeto</a>
+                <a href="#" target="_blank" class="btn-code">Ver Código</a>
+              </div>
+            </div>
+
+
+            <div class="project-card">
+              <img
+                src="https://via.placeholder.com/400x250/3366FF/FFFFFF?text=Projeto+C"
+                alt="Imagem do Projeto C"
+              />
+              <h3>API de Tempo</h3>
+              <p>
+                API RESTful para consulta de dados climáticos em tempo real, com
+                cache de dados e autenticação.
+              </p>
+              <span class="project-owner">Proprietário: Lucas Porto</span>
+              <div class="project-links">
+                <a href="#" target="_blank" class="btn-project">Ver Projeto</a>
+                <a href="#" target="_blank" class="btn-code">Ver Código</a>
+              </div>
+            </div>
+
+
+            <div class="project-card">
+              <img
+                src="https://via.placeholder.com/400x250/FFFF33/333333?text=Projeto+D"
+                alt="Imagem do Projeto D"
+              />
+              <h3>Sistema de Gerenciamento de Tarefas</h3>
+              <p>
+                Aplicação web para organização de tarefas com funcionalidades de
+                priorização e status.
+              </p>
+              <span class="project-owner">Proprietário: Raffael Queiroga</span>
+              <div class="project-links">
+                <a href="#" target="_blank" class="btn-project">Ver Projeto</a>
+                <a href="#" target="_blank" class="btn-code">Ver Código</a>
+              </div>
+            </div>
+
+
+            <div class="project-card">
+              <img
+                src="https://via.placeholder.com/400x250/FF33FF/FFFFFF?text=Projeto+E"
+                alt="Imagem do Projeto E"
+              />
+              <h3>Landing Page de Evento</h3>
+              <p>
+                Criação de uma landing page atraente para um evento, com
+                formulário de inscrição e contador regressivo.
+              </p>
+              <span class="project-owner">Proprietário: João Lucas</span>
+              <div class="project-links">
+                <a href="#" target="_blank" class="btn-project">Ver Projeto</a>
+                <a href="#" target="_blank" class="btn-code">Ver Código</a>
+              </div>
+            </div>
+
+
+            <div class="project-card">
+              <img
+                src="https://via.placeholder.com/400x250/33FFFF/333333?text=Projeto+F"
+                alt="Imagem do Projeto F"
+              />
+              <h3>Portfólio Pessoal</h3>
+              <p>
+                Desenvolvimento de um portfólio online para designers, com
+                galeria de trabalhos e formulário de contato.
+              </p>
+              <span class="project-owner">Proprietário: Lucas Porto</span>
+              <div class="project-links">
+                <a href="#" target="_blank" class="btn-project">Ver Projeto</a>
+                <a href="#" target="_blank" class="btn-code">Ver Código</a>
+              </div>
+            </div>
+            
+          </div>
+
+          <button class="carousel-button prev">&#10094;</button>
+          <button class="carousel-button next">&#10095;</button>
+          <div class="carousel-indicators"></div>
+        </div>
+
+
+      </section>
+
       <section id="contatos"></section>
     </main>
 
-    <footer></footer>
+    <footer>
+      <p>© 2025. All rights reserved.</p>
+    </footer>
+
+    <script src="js/particulas/particles.min.js"></script>
+    <script src="js/particulas/particles-config.js"></script>
+    <script src="js/navbar/navbar-full.js"></script>
+    <script src="js/back-to-top.js"></script>
+    <script src="js/projetos.js"></script>
   </body>
 </html>
