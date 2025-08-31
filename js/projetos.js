@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-<<<<<<< HEAD
     const carouselContainer = document.querySelector('#projetos .carousel-container');
     const carouselTrack = document.querySelector('#projetos .carousel-track');
     const projectCards = document.querySelectorAll('#projetos .project-card');
@@ -9,16 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let currentIndex = 0;
     let cardWidth = 0; 
-=======
-    const carouselTrack = document.querySelector('.carousel-track');
-    const projectCards = document.querySelectorAll('.project-card');
-    const prevButton = document.querySelector('.carousel-button.prev');
-    const nextButton = document.querySelector('.carousel-button.next');
-    const indicatorsContainer = document.querySelector('.carousel-indicators');
-
-    let currentIndex = 0;
-    let cardWidth = projectCards[0].offsetWidth + (parseFloat(getComputedStyle(projectCards[0]).marginRight) * 2); 
->>>>>>> cb49747d1505d5cccd2af16cc67a26bcb7ef74f6
     let visibleCards = 0; 
 
     function createIndicators() {
@@ -46,11 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function updateIndicators() {
-<<<<<<< HEAD
         const indicators = document.querySelectorAll('#projetos .indicator');
-=======
-        const indicators = document.querySelectorAll('.indicator');
->>>>>>> cb49747d1505d5cccd2af16cc67a26bcb7ef74f6
         indicators.forEach((indicator, index) => {
             indicator.classList.remove('active');
             if (index === Math.floor(currentIndex / visibleCards)) {
@@ -60,7 +45,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function calculateVisibleCards() {
-<<<<<<< HEAD
         const containerWidth = carouselContainer.offsetWidth;
         if (projectCards.length > 0) {
             cardWidth = projectCards[0].offsetWidth + (parseFloat(getComputedStyle(projectCards[0]).marginRight) * 2);
@@ -70,12 +54,6 @@ document.addEventListener('DOMContentLoaded', () => {
             visibleCards = 1;
             cardWidth = containerWidth;
         }
-=======
-        const containerWidth = carouselTrack.offsetWidth;
-        cardWidth = projectCards[0].offsetWidth + (parseFloat(getComputedStyle(projectCards[0]).marginRight) * 2);
-        visibleCards = Math.floor(containerWidth / cardWidth);
-        if (visibleCards === 0) visibleCards = 1; 
->>>>>>> cb49747d1505d5cccd2af16cc67a26bcb7ef74f6
     }
 
     prevButton.addEventListener('click', () => {
