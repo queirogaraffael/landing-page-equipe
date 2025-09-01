@@ -7,8 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const indicatorsContainer = document.querySelector('#projetos .carousel-indicators');
 
     let currentIndex = 0;
-    let cardWidth = 0; 
     let visibleCards = 0; 
+    let cardMargin = 0;
 
     function createIndicators() {
         indicatorsContainer.innerHTML = '';
@@ -27,9 +27,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function updateCarousel() {
         const maxIndex = projectCards.length - visibleCards;
-        if (currentIndex < 0) currentIndex = 0;
-        if (currentIndex > maxIndex) currentIndex = maxIndex;
+        if (currentIndex < 0) {
+            currentIndex = maxIndex;
+        }
+        if (currentIndex > maxIndex) {
+            currentIndex = 0;
+        }
 
+        const cardWidth = projectCards[0].offsetWidth + (cardMargin * 2);
         carouselTrack.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
         updateIndicators();
     }
@@ -47,30 +52,22 @@ document.addEventListener('DOMContentLoaded', () => {
     function calculateVisibleCards() {
         const containerWidth = carouselContainer.offsetWidth;
         if (projectCards.length > 0) {
-            cardWidth = projectCards[0].offsetWidth + (parseFloat(getComputedStyle(projectCards[0]).marginRight) * 2);
-            visibleCards = Math.floor(containerWidth / cardWidth);
+            cardMargin = parseFloat(getComputedStyle(projectCards[0]).marginRight);
+            const cardWidthWithMargin = projectCards[0].offsetWidth + (cardMargin * 2);
+            visibleCards = Math.floor(containerWidth / cardWidthWithMargin);
             if (visibleCards === 0) visibleCards = 1;
         } else {
             visibleCards = 1;
-            cardWidth = containerWidth;
         }
     }
 
     prevButton.addEventListener('click', () => {
         currentIndex -= visibleCards;
-        if (currentIndex < 0) {
-            currentIndex = projectCards.length - visibleCards; 
-            if (currentIndex < 0) currentIndex = 0; 
-        }
         updateCarousel();
     });
 
     nextButton.addEventListener('click', () => {
         currentIndex += visibleCards;
-        const maxIndex = projectCards.length - visibleCards;
-        if (currentIndex > maxIndex) {
-            currentIndex = 0; 
-        }
         updateCarousel();
     });
 
