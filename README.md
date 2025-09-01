@@ -14,7 +14,7 @@ O objetivo é praticar **HTML, CSS e JavaScript**, focando em:
 ## 🛠 Ferramentas e Tecnologias Utilizadas
 - **HTML5** – Estrutura semântica do site  
 - **CSS3** – Estilos e responsividade  
-- **JavaScript (Vanilla JS)** – Interações: validação de formulário, scroll suave, botão "voltar ao topo"  
+- **JavaScript** – Interações: validação de formulário, scroll suave, botão "voltar ao topo"  
 - **Git/GitHub** – Controle de versão e colaboração  
 - **GitHub Pages** – Publicação da landing page  
 
