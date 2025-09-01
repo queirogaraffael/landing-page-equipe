@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,17 +16,82 @@
   </head>
   <body>
     <header>
-        <nav></nav>
+      <nav></nav>
     </header>
 
     <main>
-      <section id="hero"></section>
+      <!-- HERO -->
+      <section id="hero">
+        <h1>Equipe Visionários</h1>
+        <p>"Transformando ideias em soluções digitais"</p>
+      </section>
+
+      <!-- SOBRE -->
       <section id="about"></section>
+
+      <!-- SKILLS -->
       <section id="skills"></section>
+
+      <!-- PROJETOS -->
       <section id="projetos"></section>
-      <section id="contatos"></section>
+
+      <!-- CONTATO -->
+      <section id="contatos">
+        <h2>Entre em Contato</h2>
+        <form class="form" id="form-contato">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required />
+
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+          <button type="submit">Enviar</button>
+          <p class="mensagem-erro" id="erro-form"></p>
+        </form>
+
+        <div style="text-align:center; margin-top:2rem;">
+          <a href="https://linkedin.com" target="_blank">LinkedIn</a> |
+          <a href="https://github.com" target="_blank">GitHub</a> |
+          <a href="mailto:email@equipe.com">E-mail</a>
+        </div>
+      </section>
     </main>
 
     <footer></footer>
+
+    <!-- Script do formulário + botão voltar ao topo -->
+    <script>
+      const form = document.getElementById('form-contato');
+      const erro = document.getElementById('erro-form');
+      form.addEventListener('submit', (e) => {
+        erro.textContent = '';
+        if (!form.nome.value || !form.email.value || !form.mensagem.value) {
+          e.preventDefault();
+          erro.textContent = 'Preencha todos os campos antes de enviar.';
+        }
+      });
+
+      // Botão voltar ao topo
+      const btnTopo = document.createElement('div');
+      btnTopo.innerText = '↑';
+      btnTopo.id = 'btn-topo';
+      btnTopo.style.display = 'none';
+      btnTopo.style.position = 'fixed';
+      btnTopo.style.bottom = '20px';
+      btnTopo.style.right = '20px';
+      btnTopo.style.cursor = 'pointer';
+      btnTopo.style.fontSize = '24px';
+      document.body.appendChild(btnTopo);
+
+      window.addEventListener('scroll', () => {
+        btnTopo.style.display = window.scrollY > 200 ? 'block' : 'none';
+      });
+      btnTopo.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    </script>
   </body>
 </html>
