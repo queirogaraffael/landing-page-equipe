@@ -36,8 +36,16 @@ O objetivo é praticar **HTML, CSS e JavaScript**, focando em:
 - index.html:
   Página principal com todas as seções
 - css:
-  - hero.css -> Estilos da seção Hero
-  - contato.css -> Estilos da seção Contato
+  - back-to-top.css
+  - background.css 
+  - hero.css 
+  - contatos.css 
+  - base.css
+  - footer.css
+  - navbar.css
+  - projetos.css
+  - skills.css
+  - about.css
 - js:
   main.js -> Funcionalidades JavaScript
 - assets:
