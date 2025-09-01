@@ -4,18 +4,20 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, sans-serif;
+  color: #fff; /* deixa todo o texto branco por padrão */
 }
 
 /* ABOUT */
 #about {
   padding: 50px 20px;
   text-align: center;
-  background: #DCDCDC;
+  background: #121212; /* fundo bem escuro */
 }
 
 #about h2 {
   font-size: 2rem;
   margin-bottom: 10px;
+  color: #fff; /* título branco */
 }
 
 .team-container {
@@ -27,22 +29,24 @@
 }
 
 .team-member {
-  background: #A9A9A9;
+  background: #2a2a2a; /* um tom de cinza mais claro que o fundo */
   padding: 15px;
   border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
   width: 250px;
-  transition: transform 0.2s;
+  transition: transform 0.2s, background 0.3s;
 }
 
 .team-member:hover {
   transform: translateY(-5px);
+  background: #333; /* destaca mais no hover */
 }
 
 .team-photo {
   width: 80%;
   border-radius: 12px;
   cursor: pointer;
+  border: 2px solid #444; /* borda leve pra destacar no fundo escuro */
 }
 
 /* MODAL */
@@ -55,7 +59,7 @@
   top: 0;
   width: 25%;
   height: 100%;
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0,0.9);
 }
 
 .modal-content {

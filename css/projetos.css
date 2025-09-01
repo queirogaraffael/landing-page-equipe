@@ -1,13 +1,14 @@
 #projetos {
     padding: 80px 20px;
-    background-color: #eef4f8;
+    background-color: #121212; /* fundo escuro */
     text-align: center;
+    color: #fff; /* texto branco padrão */
 }
 
 #projetos h2 {
     font-size: 2.8em;
     margin-bottom: 50px;
-    color: #2c3e50;
+    color: #fff; /* título branco */
 }
 
 .carousel-container {
@@ -25,40 +26,42 @@
 }
 
 .project-card {
-    flex: 0 0 100%; /* Padrão mobile-first: um card por vez */
+    flex: 0 0 100%;
     margin: 0 10px;
-    background-color: #fff;
+    background-color: #2a2a2a; /* card levemente claro que se destaca do fundo */
     border-radius: 12px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
     overflow: hidden;
     text-align: left;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, background 0.3s ease;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    color: #fff; /* texto branco dentro do card */
 }
 
 .project-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    background-color: #333; /* destaque no hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
 }
 
 .project-card img {
     width: 100%;
     height: 220px;
     object-fit: cover;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #444; /* borda discreta pro contraste */
 }
 
 .project-card h3 {
     font-size: 1.6em;
-    color: #34495e;
+    color: #fff;
     margin: 20px 20px 10px;
 }
 
 .project-card p {
     font-size: 1em;
-    color: #7f8c8d;
+    color: #ccc; /* texto secundário mais claro */
     line-height: 1.6;
     margin: 0 20px 10px;
     flex-grow: 1;
@@ -66,7 +69,7 @@
 
 .project-card .project-owner {
     font-size: 0.9em;
-    color: #95a5a6;
+    color: #aaa;
     margin: 0 20px 20px;
     display: block;
     font-style: italic;
@@ -78,17 +81,6 @@
     display: flex;
     justify-content: flex-start;
     gap: 15px;
-}
-
-.btn-project,
-.btn-code {
-    display: inline-block;
-    padding: 10px 20px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    font-size: 0.95em;
 }
 
 .btn-project {
@@ -103,13 +95,13 @@
 }
 
 .btn-code {
-    background-color: #ecf0f1;
-    color: #34495e;
-    border: 2px solid #bdc3c7;
+    background-color: #555; /* botão escuro para o modo dark */
+    color: #fff;
+    border: 2px solid #777;
 }
 
 .btn-code:hover {
-    background-color: #bdc3c7;
+    background-color: #777;
     color: #fff;
 }
 
@@ -117,7 +109,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
     color: white;
     border: none;
     padding: 15px 10px;
@@ -129,7 +121,7 @@
 }
 
 .carousel-button:hover {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .carousel-button.prev {
@@ -150,7 +142,7 @@
 .indicator {
     width: 12px;
     height: 12px;
-    background-color: #ccc;
+    background-color: #555;
     border-radius: 50%;
     cursor: pointer;
     transition: background-color 0.3s ease;
