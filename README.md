@@ -82,15 +82,15 @@ O projeto está publicado no GitHub Pages:
 
 ## 📝 Contatos
 Entre em contato com a equipe Visionários:  
-#  Raffael Queiroga
+## Raffael Queiroga
 - **LinkedIn:** http://www.linkedin.com/in/raffaelqueiroga  
 - **GitHub:** https://github.com/queirogaraffael
 - **E-mail:** raffael.queiroga@maisunifacisa.com.br
-# Lucas Porto
+## Lucas Porto
 - **LinkedIn:**  https://www.linkedin.com/in/lucas-porto-de-ara%C3%BAjo-cavalcante-25367b348/
 - **GitHub:** https://github.com/lucasportoac
 - **E-mail:** lucas.cavalcante@maisunifacisa.com.br
-# João Lucas
+## João Lucas
 - **LinkedIn:**  https://br.linkedin.com/in/jo%C3%A3o-lucas-a388a8330
 - **GitHub:** https://github.com/lucbar06
 - **E-mail:** joao.barros@maisunifacisa.com.br
