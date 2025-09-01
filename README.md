@@ -1,7 +1,5 @@
 # Landing Page da Equipe Visionários
 
-![Banner do Projeto](https://github.com/queirogaraffael/landing-page-equipe/blob/main/assets/imagens/favicon.png)
-
 ## 💡 Finalidade do Projeto
 Este projeto é uma **landing page** que apresenta a equipe Visionários, seus integrantes, skills, projetos realizados e informações de contato.  
 O objetivo é praticar **HTML, CSS e JavaScript**, focando em:
@@ -35,15 +33,16 @@ O objetivo é praticar **HTML, CSS e JavaScript**, focando em:
 ---
 
 ## 📄 Estrutura do Projeto
--/index.html -> Página principal com todas as seções
--/css
-  *hero.css -> Estilos da seção Hero
-  *contato.css -> Estilos da seção Contato
--/js
-main.js -> Funcionalidades JavaScript
--/assets
-imagens/ -> Imagens do projeto, logos e fotos da equipe
--README.md -> Este arquivo
+- index.html:
+  -Página principal com todas as seções
+- css:
+  -hero.css: Estilos da seção Hero
+  -contato.css: Estilos da seção Contato
+- js
+  -main.js: Funcionalidades JavaScript
+- assets
+  -imagens: Imagens do projeto, logos e fotos da equipe
+- README.md: Este arquivo
 
 ## 📌 Funcionalidades do Projeto
 - **Hero**: Nome da equipe, slogan, visual atrativo  
