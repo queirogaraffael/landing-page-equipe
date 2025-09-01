@@ -69,6 +69,7 @@ O objetivo é praticar **HTML, CSS e JavaScript**, focando em:
 ## 🌐 Publicação
 O projeto está publicado no GitHub Pages:  
 [Link para a Landing Page](https://github.com/queirogaraffael/landing-page-equipe.git)
+https://queirogaraffael.github.io/landing-page-equipe/
  
 ---
 
