@@ -1,23 +1,22 @@
-/* RESET */
+/* RESET E SEÇÃO ABOUT: Mantenha o que já existe */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, sans-serif;
-  color: #fff; /* deixa todo o texto branco por padrão */
+  color: #fff;
 }
 
-/* ABOUT */
 #about {
   padding: 50px 20px;
   text-align: center;
-  background: #121212; /* fundo bem escuro */
+  background: #121212;
 }
 
 #about h2 {
   font-size: 2rem;
   margin-bottom: 10px;
-  color: #fff; /* título branco */
+  color: #fff;
 }
 
 .team-container {
@@ -29,43 +28,63 @@
 }
 
 .team-member {
-  background: #2a2a2a; /* um tom de cinza mais claro que o fundo */
+  background: #2a2a2a;
   padding: 15px;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
   width: 250px;
+  flex-shrink: 0;
   transition: transform 0.2s, background 0.3s;
 }
 
 .team-member:hover {
   transform: translateY(-5px);
-  background: #333; /* destaca mais no hover */
+  background: #333;
 }
 
 .team-photo {
   width: 80%;
   border-radius: 12px;
   cursor: pointer;
-  border: 2px solid #444; /* borda leve pra destacar no fundo escuro */
+  border: 2px solid #444;
 }
 
-/* MODAL */
+/* CARROSSEL PARA MOBILE */
+@media (max-width: 768px) {
+  .team-container {
+    flex-wrap: nowrap; 
+    overflow-x: auto; 
+    justify-content: flex-start; 
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+  }
+
+  .team-member {
+    scroll-snap-align: start; 
+  }
+}
+
 .modal {
   display: none;
   position: fixed;
   z-index: 1000;
-  padding-top: 80px;
   left: 0;
   top: 0;
-  width: 25%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.9);
+  width: 100%;
+  height: 100%; 
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  padding: 20px;
 }
 
 .modal-content {
   display: block;
-  margin: auto;
-  max-width: 70%;
+  max-width: 90%; 
+  max-height: 90%; 
+  width: auto;
+  height: auto;
   border-radius: 10px;
 }
 
@@ -73,6 +92,9 @@
   text-align: center;
   color: #fff;
   margin-top: 10px;
+  position: absolute;
+  bottom: 20px; 
+  width: 100%;
 }
 
 .close {
