@@ -53,7 +53,10 @@ O objetivo é praticar **HTML, CSS e JavaScript**, focando em:
 - README.md: Este arquivo
 
 ## 📌 Funcionalidades do Projeto
-- **Hero**: Nome da equipe, slogan, visual atrativo  
+- **Hero**: Nome da equipe, slogan, visual atrativo
+- **Sobre a equipe**: Breve descrição + fotos,nome,posição de cada integrante.
+- **Skills/Stacks**: Ícones/listas com as tecnologias dominadas pelo grupo.
+- **Projetos/Trabalhos**: Cards com título, descrição breve e links.
 - **Contato**: Formulário de contato com validação, links para LinkedIn, GitHub e e-mail  
 - **Responsividade**: Layout adaptável para mobile, tablet e desktop  
 - **Interações JS**:  
