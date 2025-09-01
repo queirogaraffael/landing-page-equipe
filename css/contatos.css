@@ -31,38 +31,33 @@
   font-size: 1rem;
 }
 
-.form button {
-  padding: 0.8rem;
-  border: none;
-  border-radius: 8px;
-  background-color: #4e54c8;
-  color: white;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: 0.3s;
+.btn-topo {
+    position: fixed;       
+    bottom: 30px;           
+    right: 30px;          
+    background-color: #111; 
+    color: #fff;           
+    padding: 12px 20px;    
+    border-radius: 50px;   
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    transition: background-color 0.3s, transform 0.2s;
+    z-index: 999;       
 }
 
-.form button:hover {
-  background-color: #3b3fa1;
+.btn-topo:hover {
+    background-color: #333;
+    transform: translateY(-3px);
 }
 
-/* Botão voltar ao topo */
-.to-top {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #4e54c8;
-  color: white;
-  padding: 0.8rem 1rem;
-  border-radius: 50%;
-  font-size: 1.5rem;
-  cursor: pointer;
-  display: none;
+#btnTopo {
+    display: none;
 }
 
 /* Tablet */
 @media (min-width: 768px) {
-  #contato h2 {
+  #contatos h2 {
     font-size: 2rem;
   }
 
@@ -79,7 +74,7 @@
 
 /* Desktop */
 @media (min-width: 1024px) {
-  #contato h2 {
+  #contatos h2 {
     font-size: 2.5rem;
   }
 
