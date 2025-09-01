@@ -1,12 +1,13 @@
 #contatos {
   padding: 80px 20px;
-  color: #ecf0f1; /* Cor do texto claro */
+  color: #f0f0f0; 
   text-align: center;
 }
 
 #contatos h2 {
   font-size: 2.5em;
   margin-bottom: 40px;
+  color: #fff; 
 }
 
 .contact-container {
@@ -18,135 +19,20 @@
 
 .contact-form,
 .contact-links {
-  background-color: #34495e; /* Cor de fundo para os blocos */
-  padding: 30px;
-  border-radius: 10px;
-  max-width: 500px;
-  width: 100%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.contact-form h3,
-.contact-links h3 {
-  font-size: 1.5em;
-  margin-bottom: 20px;
-  border-bottom: 2px solid #007bff;
-  padding-bottom: 10px;
-  display: inline-block;
-}
-
-.contact-form label {
-  display: block;
-  text-align: left;
-  margin-bottom: 5px;
-  font-weight: bold;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: calc(100% - 20px);
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #7f8c8d;
-  background-color: #ecf0f1;
-  color: #34495e;
-  border-radius: 5px;
-}
-
-.contact-form textarea {
-  resize: vertical;
-}
-
-.send-button {
-  background-color: #007bff;
-  color: #fff;
-  padding: 15px 30px;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  font-size: 1em;
-  transition: background-color 0.3s ease;
-}
-
-.send-button:hover {
-  background-color: #0056b3;
-}
-
-.social-links {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 15px;
-  text-align: left;
-}
-
-.social-links a {
-  display: flex;
-  align-items: center;
-  color: #ecf0f1;
-  text-decoration: none;
-  font-size: 1.1em;
-  transition: color 0.3s ease;
-}
-
-.social-links a:hover {
-  color: #007bff;
-}
-
-.social-links img {
-  width: 24px;
-  height: 24px;
-  filter: invert(1);
-  margin-right: 10px;
-}
-
-.email-info {
-  margin-top: 20px;
-  font-size: 1.1em;
-}
-
-.email-info a {
-  color: #007bff;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-
-#contatos {
-  padding: 80px 20px;
-  color: #f0f0f0; /* letras claras */
-  text-align: center;
-}
-
-#contatos h2 {
-  font-size: 2.5em;
-  margin-bottom: 40px;
-  color: #fff; /* título branco */
-}
-
-.contact-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 40px;
-}
-
-.contact-form,
-.contact-links {
-  background-color: rgba(50, 50, 50, 0.85); /* "escuro-claro" semi-transparente */
+  background-color: rgba(50, 50, 50, 0.85);
   padding: 30px;
   border-radius: 10px;
   max-width: 500px;
   width: 100%;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-  color: #f0f0f0; /* texto claro */
+  color: #f0f0f0; 
 }
 
 .contact-form h3,
 .contact-links h3 {
   font-size: 1.5em;
   margin-bottom: 20px;
-  border-bottom: 2px solid #fff; /* tira azul, deixa branco */
+  border-bottom: 2px solid #fff;
   padding-bottom: 10px;
   display: inline-block;
   color: #fff;
@@ -166,7 +52,7 @@
   padding: 10px;
   margin-bottom: 20px;
   border: 1px solid #777;
-  background-color: rgba(70, 70, 70, 0.9); /* escuro-claro */
+  background-color: rgba(70, 70, 70, 0.9); 
   color: #f0f0f0;
   border-radius: 5px;
 }
@@ -176,7 +62,7 @@
 }
 
 .send-button {
-  background-color: #555; /* botão escuro consistente */
+  background-color: #555;
   color: #f0f0f0;
   padding: 15px 30px;
   border: none;
@@ -189,13 +75,18 @@
 .send-button:hover {
   background-color: #777;
 }
-
 .social-links {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
   align-items: flex-start;
   gap: 15px;
   text-align: left;
+}
+
+.member-links {
+  display: flex;
+  align-items: center; 
+  gap: 10px;
 }
 
 .social-links a {
@@ -214,8 +105,7 @@
 .social-links img {
   width: 24px;
   height: 24px;
-  filter: invert(1);
-  margin-right: 10px;
+  margin-right: 0; 
 }
 
 .email-info {

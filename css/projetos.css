@@ -84,18 +84,21 @@
 }
 
 .btn-project {
-    background-color: #3498db;
-    color: #fff;
-    border: 2px solid #3498db;
+    background-color: #3498db; 
+    color: #fff; 
+    border: none; 
+    padding: 10px 20px; 
+    text-decoration: none; 
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 0; 
 }
 
 .btn-project:hover {
-    background-color: #2980b9;
-    border-color: #2980b9;
+    background-color: #2980b9
 }
-
 .btn-code {
-    background-color: #555; /* botão escuro para o modo dark */
+    background-color: #555;
     color: #fff;
     border: 2px solid #777;
 }
