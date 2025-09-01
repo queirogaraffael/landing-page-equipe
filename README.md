@@ -1,7 +1,7 @@
-# Landing Page da Equipe Visionários
+# Landing Page da Equipe CodeCrafters
 
 ## 💡 Finalidade do Projeto
-Este projeto é uma **landing page** que apresenta a equipe Visionários, seus integrantes, skills, projetos realizados e informações de contato.  
+Este projeto é uma **landing page** que apresenta a equipe CodeCrafters, seus integrantes, skills, projetos realizados e informações de contato.  
 O objetivo é praticar **HTML, CSS e JavaScript**, focando em:
 
 - Layout responsivo (mobile-first)  
