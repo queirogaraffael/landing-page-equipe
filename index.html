@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing Page - Equipe</title>
+    <title>Landing Page Equipe</title>
 
     <meta
       name="description"
@@ -18,7 +18,9 @@
     <link rel="stylesheet" href="css/background.css" />
     <link rel="stylesheet" href="css/skills.css" />
     <link rel="stylesheet" href="css/projetos.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/contatos.css" />
   </head>
   <body>
     <div id="particles-js"></div>
@@ -27,7 +29,7 @@
 
     <header class="navbar">
       <div class="logo">
-        <h1>Equipe – Landing Page</h1>
+        <h1>Landing Page Equipe</h1>
       </div>
 
       <div class="menu-toggle">
@@ -40,7 +42,7 @@
         <div class="navbar-overlay"></div>
         <ul>
           <li><a href="#hero">Home</a></li>
-          <li><a href="#team">Sobre</a></li>
+          <li><a href="#about">Sobre</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projetos">Projetos</a></li>
           <li><a href="#contatos">Contatos</a></li>
@@ -49,10 +51,16 @@
     </header>
 
     <main>
-      <section id="hero"></section>
+      <section id="hero">
+        <div class="hero-content">
+          <h1>CodeCrafters</h1>
+          <p>Construindo o futuro com código e criatividade. 🚀</p>
+          <a href="#projetos" class="cta-button">Ver Projetos</a>
+        </div>
+      </section>
 
-      <section id="team">
-        <h2>Sobre a Equipe</h2>
+      <section id="about">
+        <h2>About</h2>
         <p>
           Somos um time apaixonado por tecnologia e inovação, cada um trazendo
           sua experiência para transformar ideias em realidade.
@@ -109,34 +117,6 @@
         <div id="caption"></div>
       </div>
 
-      <section id="testimonials">
-        <h2>Depoimentos</h2>
-        <div class="carousel">
-          <button class="prev">&#10094;</button>
-          <div class="carousel-track">
-            <div class="testimonial">
-              <p>
-                "Trabalhar com essa equipe foi incrível! Sempre entregam com
-                qualidade e no prazo."
-              </p>
-              <h4>- Cliente 1</h4>
-            </div>
-            <div class="testimonial">
-              <p>"Equipe super dedicada e atenciosa. Recomendo demais!"</p>
-              <h4>- Cliente 2</h4>
-            </div>
-            <div class="testimonial">
-              <p>
-                "Profissionais excepcionais! Trouxeram inovação para o nosso
-                projeto."
-              </p>
-              <h4>- Cliente 3</h4>
-            </div>
-          </div>
-          <button class="next">&#10095;</button>
-        </div>
-      </section>
-
       <section id="skills">
         <h2>Skills & Stacks</h2>
 
@@ -174,11 +154,12 @@
               </div>
               <div class="skill-item">
                 <img
-                  src="https://skillicons.dev"
+                  src="https://skillicons.dev/icons?i=terraform"
                   alt="Terraform Icon"
                 />
                 <span>Terraform</span>
               </div>
+
               <div class="skill-item">
                 <img src="https://skillicons.dev/icons?i=aws" alt="AWS Icon" />
                 <span>AWS</span>
@@ -199,23 +180,31 @@
 
               <div class="skill-item">
                 <img
-                  src="https://skillicons.dev/icons?i=django"
-                  alt="Django Icon"
+                  src="https://skillicons.dev/icons?i=javascript"
+                  alt="JavaScript Icon"
                 />
-                <span>Django</span>
+                <span>JavaScript</span>
               </div>
 
               <div class="skill-item">
                 <img
-                  src="https://skillicons.dev/icons?i=postgresql"
-                  alt="PostgreSQL Icon"
+                  src="https://skillicons.dev/icons?i=java"
+                  alt="Java Icon"
                 />
-                <span>PostgreSQL</span>
+                <span>Java</span>
               </div>
 
               <div class="skill-item">
-                <img src="https://skillicons.dev/icons?i=aws" alt="AWS Icon" />
-                <span>AWS</span>
+                <img
+                  src="https://skillicons.dev/icons?i=html"
+                  alt="HTML Icon"
+                />
+                <span>HTML</span>
+              </div>
+
+              <div class="skill-item">
+                <img src="https://skillicons.dev/icons?i=css" alt="CSS Icon" />
+                <span>CSS</span>
               </div>
             </div>
           </div>
@@ -276,18 +265,20 @@
 
             <div class="project-card">
               <img
-                src="https://via.placeholder.com/400x250/33FF57/FFFFFF?text=Projeto+B"
-                alt="Imagem do Projeto B"
+                src="https://via.placeholder.com/400x250/FF5733/FFFFFF?text=Gerenciador+de+Contatos"
+                alt="Imagem do Gerenciador de Contatos"
               />
-              <h3>Plataforma de Blog</h3>
+              <h3>Gerenciador de Contatos</h3>
               <p>
-                Sistema de gerenciamento de conteúdo para blog, com autenticação
-                de usuários e CRUD de posts.
+                Projeto desenvolvido em <strong>Python</strong> para execução no
+                <strong>terminal</strong>. Ele permite gerenciar contatos de
+                forma simples e prática, oferecendo funcionalidades como
+                adicionar, visualizar, excluir e interagir com a lista de
+                contatos.
               </p>
               <span class="project-owner">Proprietário: João Lucas</span>
               <div class="project-links">
                 <a href="#" target="_blank" class="btn-project">Ver Projeto</a>
-                <a href="#" target="_blank" class="btn-code">Ver Código</a>
               </div>
             </div>
 
@@ -327,18 +318,20 @@
 
             <div class="project-card">
               <img
-                src="https://via.placeholder.com/400x250/FF33FF/FFFFFF?text=Projeto+E"
-                alt="Imagem do Projeto E"
+                src="https://via.placeholder.com/400x250/33C1FF/FFFFFF?text=Gerenciamento+Hospitalar"
+                alt="Imagem do Projeto de Gerenciamento Hospitalar"
               />
-              <h3>Landing Page de Evento</h3>
+              <h3>Gerenciamento Hospitalar</h3>
               <p>
-                Criação de uma landing page atraente para um evento, com
-                formulário de inscrição e contador regressivo.
+                Sistema desenvolvido em <strong>Python</strong> com integração
+                ao <strong>MySQL</strong>, voltado para a administração
+                hospitalar. O projeto possibilita o cadastro, pesquisa e
+                exclusão de pacientes e médicos, além de oferecer recursos como
+                agendamento de consultas e registro de procedimentos médicos.
               </p>
               <span class="project-owner">Proprietário: João Lucas</span>
               <div class="project-links">
                 <a href="#" target="_blank" class="btn-project">Ver Projeto</a>
-                <a href="#" target="_blank" class="btn-code">Ver Código</a>
               </div>
             </div>
 
@@ -366,7 +359,78 @@
         </div>
       </section>
 
-      <section id="contatos"></section>
+      <section id="contatos">
+        <h2>Fale Conosco</h2>
+        <div class="contact-container">
+          <div class="contact-form">
+            <h3>Envie uma Mensagem</h3>
+            <form action="#" method="post">
+              <label for="name">Nome:</label>
+              <input type="text" id="name" name="name" required />
+
+              <label for="email">E-mail:</label>
+              <input type="email" id="email" name="email" required />
+
+              <label for="message">Mensagem:</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+
+              <button type="submit" class="send-button">Enviar</button>
+            </form>
+          </div>
+
+          <div class="contact-links">
+            <h3>Redes Profissionais</h3>
+            <div class="social-links">
+              <a
+                href="https://www.linkedin.com/in/raffael-queiroga/"
+                target="_blank"
+                aria-label="Perfil do Raffael Queiroga no LinkedIn"
+              >
+                <img
+                  src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/linkedin.svg"
+                  alt="LinkedIn Icon"
+                />
+                <span>Raffael Queiroga</span>
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/joao-lucas-pereira-machado/"
+                target="_blank"
+                aria-label="Perfil do João Lucas no LinkedIn"
+              >
+                <img
+                  src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/linkedin.svg"
+                  alt="LinkedIn Icon"
+                />
+                <span>João Lucas</span>
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/lucas-porto-da-silva/"
+                target="_blank"
+                aria-label="Perfil do Lucas Porto no LinkedIn"
+              >
+                <img
+                  src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/linkedin.svg"
+                  alt="LinkedIn Icon"
+                />
+                <span>Lucas Porto</span>
+              </a>
+            </div>
+            <p class="email-info">
+              Ou envie um e-mail direto para:
+              <a href="mailto:contato@codecrafters.com"
+                >contato@codecrafters.com</a
+              >
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>
@@ -378,6 +442,7 @@
     <script src="js/navbar/navbar-full.js"></script>
     <script src="js/back-to-top.js"></script>
     <script src="js/projetos.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/about.js"></script>
+    <script src="js/contato-validation.js"></script>
   </body>
 </html>

@@ -1,8 +1,8 @@
 #skills {
     padding: 60px 20px;
-    background-color: #f9f9f9;
     text-align: center;
 }
+
 
 #skills h2 {
     font-size: 2.5em;
@@ -12,11 +12,8 @@
 
 .skills-container {
     display: flex;
-<<<<<<< HEAD
     flex-direction: column; 
-=======
-    flex-direction: column; /* Padrão mobile-first: empilha os cards */
->>>>>>> cb49747d1505d5cccd2af16cc67a26bcb7ef74f6
+    flex-direction: column;
     align-items: center;
     gap: 40px;
 }
