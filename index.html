@@ -11,12 +11,16 @@
     />
 
     <link rel="icon" href="assets/imagens/favicon.png" type="image/png" />
+
+    <!-- CSS separados -->
     <link rel="stylesheet" href="css/hero.css" />
     <link rel="stylesheet" href="css/contato.css" />
   </head>
   <body>
     <header>
-      <nav></nav>
+      <nav>
+        <!-- Menu de navegação pode ser inserido aqui -->
+      </nav>
     </header>
 
     <main>
@@ -27,16 +31,22 @@
       </section>
 
       <!-- SOBRE -->
-      <section id="about"></section>
+      <section id="about">
+        <!-- Conteúdo sobre a equipe -->
+      </section>
 
       <!-- SKILLS -->
-      <section id="skills"></section>
+      <section id="skills">
+        <!-- Lista de skills / stacks -->
+      </section>
 
       <!-- PROJETOS -->
-      <section id="projetos"></section>
+      <section id="projetos">
+        <!-- Cards de projetos -->
+      </section>
 
       <!-- CONTATO -->
-      <section id="contatos">
+      <section id="contato">
         <h2>Entre em Contato</h2>
         <form class="form" id="form-contato">
           <label for="nome">Nome:</label>
@@ -60,10 +70,13 @@
       </section>
     </main>
 
-    <footer></footer>
+    <footer>
+      <!-- Rodapé -->
+    </footer>
 
-    <!-- Script do formulário + botão voltar ao topo -->
+    <!-- JS do formulário + botão voltar ao topo -->
     <script>
+      // Validação simples do formulário
       const form = document.getElementById('form-contato');
       const erro = document.getElementById('erro-form');
       form.addEventListener('submit', (e) => {
@@ -78,17 +91,13 @@
       const btnTopo = document.createElement('div');
       btnTopo.innerText = '↑';
       btnTopo.id = 'btn-topo';
-      btnTopo.style.display = 'none';
-      btnTopo.style.position = 'fixed';
-      btnTopo.style.bottom = '20px';
-      btnTopo.style.right = '20px';
-      btnTopo.style.cursor = 'pointer';
-      btnTopo.style.fontSize = '24px';
+      btnTopo.classList.add('to-top');
       document.body.appendChild(btnTopo);
 
       window.addEventListener('scroll', () => {
         btnTopo.style.display = window.scrollY > 200 ? 'block' : 'none';
       });
+
       btnTopo.addEventListener('click', () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
       });
