@@ -24,7 +24,7 @@ O objetivo é praticar **HTML, CSS e JavaScript**, focando em:
 
 | Integrantes      | Contribuição Principal                                      |
 |-----------------|-------------------------------------------------------------|
-| Lucas Porto      | Hero (nome da equipe, slogan), Contato (formulário)       |
+| Lucas Porto      | Hero (nome da equipe, slogan), Contato (formulário) e README.md       |
 | João Lucas     | Seção Sobre a Equipe, fotos, nomes e posições             |
 | Raffael Queiroga     | Seção Skills e Projetos, cards com tecnologias e links    |
 
