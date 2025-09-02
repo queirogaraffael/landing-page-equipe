@@ -24,11 +24,11 @@ O objetivo é praticar **HTML, CSS e JavaScript**, focando em:
 
 | Integrantes      | Contribuição Principal                                      |
 |-----------------|-------------------------------------------------------------|
-| Lucas Porto      | Hero (nome da equipe, slogan), Contato (formulário)       |
+| Lucas Porto      | Hero (nome da equipe, slogan), Contato (formulário) e README.md       |
 | João Lucas     | Seção Sobre a Equipe, fotos, nomes e posições             |
 | Raffael Queiroga     | Seção Skills e Projetos, cards com tecnologias e links    |
 
-> Cada integrante fez commits próprios no repositório, registrando suas contribuições de forma clara.
+> Cada integrante fez commits próprios em sua respectiva branch no repositório, registrando suas contribuições de forma clara..
 
 ---
 
@@ -60,16 +60,18 @@ O objetivo é praticar **HTML, CSS e JavaScript**, focando em:
 - **Contato**: Formulário de contato com validação, links para LinkedIn, GitHub e e-mail  
 - **Responsividade**: Layout adaptável para mobile, tablet e desktop  
 - **Interações JS**:  
-  - Scroll suave  
+  - Scroll suave
   - Botão "voltar ao topo"  
-  - Validação do formulário com mensagens amigáveis  
+  - Validação do formulário com mensagens amigáveis
+  - Carousel
+  - Modal/Lightbox
+  - Menu hambúrguer
 
 ---
 
 ## 🌐 Publicação
 O projeto está publicado no GitHub Pages:  
-[Link para a Landing Page](https://github.com/queirogaraffael/landing-page-equipe.git)
-- Projeto: https://queirogaraffael.github.io/landing-page-equipe/
+- https://queirogaraffael.github.io/landing-page-equipe/
  
 ---
 
@@ -81,7 +83,7 @@ O projeto está publicado no GitHub Pages:
 ---
 
 ## 📝 Contatos
-Entre em contato com a equipe Visionários:  
+Entre em contato com a equipe CodeCrafters:  
 ## Raffael Queiroga 
 - **LinkedIn:** http://www.linkedin.com/in/raffaelqueiroga  
 - **GitHub:** https://github.com/queirogaraffael
